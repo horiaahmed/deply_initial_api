@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 model = joblib.load("Random Forest.joblib")  
-
+os.makedirs('uploads', exist_ok=True)
 def extract_features(video_path):
     return [0.0] * 128  # Replace with real feature extraction
 
