@@ -1,5 +1,12 @@
 [phases.setup]
-nixPkgs = ["libGL"]
+nixPkgs = [
+  "libGL", 
+  "glib", 
+  "libglvnd", 
+  "libglvnd-glx", 
+  "mesa", 
+  "xorg.libX11"
+]
 
 [phases.install]
 cmds = ["pip install -r requirements.txt"]
